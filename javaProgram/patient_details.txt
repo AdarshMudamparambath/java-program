@@ -1,0 +1,3 @@
+John Doe,25,Fever,3
+Alice Smith,35,Cough,2
+Bob Johnson,45,Headache,4
