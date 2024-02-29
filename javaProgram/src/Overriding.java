@@ -11,11 +11,12 @@ class Dog extends Animal {
         System.out.println("Dog barks");
     }
 }
-class cat extends Animal {
+
+class Cat extends Animal {
     // Method overriding
     @Override
     void makeSound() {
-        System.out.println("cat meow");
+        System.out.println("Cat meows");
     }
 }
 
@@ -30,6 +31,9 @@ public class Overriding {
         // Polymorphism: Reference of superclass to subclass object
         Animal anotherDog = new Dog();
         anotherDog.makeSound(); // Output: Dog barks
-    
+        
+        // Create a Cat object and call its makeSound() method
+        Cat cat = new Cat();
+        cat.makeSound(); // Output: Cat meows
     }
 }
