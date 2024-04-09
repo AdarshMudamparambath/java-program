@@ -16,7 +16,7 @@ public class TCPClient {
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
 
             String inputLine;
-            System.out.println("Enter message (type 'exit' to quit): ");
+            System.out.println("Enter the message (type 'exit' to quit): ");
             while ((inputLine = userInput.readLine()) != null && !inputLine.equalsIgnoreCase("exit")) {
                 out.println(inputLine);
                 System.out.println(in.readLine());
