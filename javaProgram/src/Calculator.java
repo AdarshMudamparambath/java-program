@@ -7,7 +7,7 @@ public class Calculator {
         double num1, num2;
         char operator;
         
-        System.out.print("Enter first number: ");
+        System.out.print("Enter the first number: ");
 
         num1 = scanner.nextDouble();
 

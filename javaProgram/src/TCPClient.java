@@ -9,14 +9,14 @@ public class TCPClient {
     public static void main(String[] args) {
         try {
             Socket socket = new Socket(SERVER_IP, PORT);
-            System.out.println("Connected to server");
+            System.out.println("Connected to the server");
 
             BufferedReader userInput = new BufferedReader(new InputStreamReader(System.in));
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
 
             String inputLine;
-            System.out.println("Enter the message (type 'exit' to quit): ");
+            System.out.println("Enter  message (type 'exit' to quit): ");
             while ((inputLine = userInput.readLine()) != null && !inputLine.equalsIgnoreCase("exit")) {
                 out.println(inputLine);
                 System.out.println(in.readLine());
